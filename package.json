@@ -1,0 +1,17 @@
+{
+	"name": "array2",
+	"version": "1.0.0",
+	"description": "A simple two-dimensional array implementation.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ElectrifyPro/array2.git"
+	},
+	"keywords": ["array", "2d"],
+	"author": "chillant",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ElectrifyPro/array2/issues"
+	},
+	"homepage": "https://github.com/ElectrifyPro/array2#readme"
+}
