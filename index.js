@@ -5,7 +5,7 @@
  * @property {number} this.size - Amount of defined elements in the 2D array.
  * @class
  */
-class Array2 {
+class Array2DD {
 	#map;
 
 	/**
@@ -80,7 +80,7 @@ class Array2 {
 
 	/**
 	 * Finds and returns the first element found that passes the provided testing function. If no satifactory value is found, `undefined` is returned.
-	 * @param {Array2~find} callback - The function that will be called on each value of the 2D array.
+	 * @param {Array2D~find} callback - The function that will be called on each value of the 2D array.
 	 * @type {*}
 	 */
 	find(callback) {
@@ -97,7 +97,7 @@ class Array2 {
 
 	/**
 	 * Executes a callback function on every element in the 2D array.
-	 * @param {Array2~forEach} callback - The function that will be called on each value of the 2D array.
+	 * @param {Array2D~forEach} callback - The function that will be called on each value of the 2D array.
 	 */
 	forEach(callback) {
 		for (var i = 0; i < this.lX; ++i) {
@@ -119,7 +119,7 @@ class Array2 {
 
 	/**
 	 * Converts a 2D array to a traditional array-of-arrays.
-	 * @param {Array2} array2 - The 2D array to convert.
+	 * @param {Array2D} array2 - The 2D array to convert.
 	 * @type {Array.<Array.<*>>}
 	 * @static
 	 */
@@ -130,11 +130,11 @@ class Array2 {
 	/**
 	 * Converts a traditional array-of-arrays to a 2D array.
 	 * @param {Array.<Array.<*>>} dualArray - Array-of-array to convert.
-	 * @type {Array2}
+	 * @type {Array2D}
 	 * @static
 	 */
-	static toArray2(dualArray) {
-		var array2 = new Array2(dualArray[0].length, dualArray.length);
+	static toArray2D(dualArray) {
+		var array2 = new Array2D(dualArray[0].length, dualArray.length);
 		array2.#map = dualArray;
 		return array2;
 	}
@@ -157,17 +157,17 @@ class Array2 {
 }
 
 /**
- * @callback Array2~find
+ * @callback Array2D~find
  * @param {*} element - The current element being checked.
  * @param {Array.<number>} position - Position of the current element being checked in the 2D array.
- * @param {Array2} map - Reference to the 2D array instance being checked.
+ * @param {Array2D} map - Reference to the 2D array instance being checked.
  * @type {boolean}
  */
 /**
- * @callback Array2~forEach
+ * @callback Array2D~forEach
  * @param {*} element - The current element being checked.
  * @param {Array.<number>} position - Position of the current element being checked in the 2D array.
- * @param {Array2} map - Reference to the 2D array instance being checked.
+ * @param {Array2D} map - Reference to the 2D array instance being checked.
  */
 
-module.exports = Array2;
+module.exports = Array2D;

@@ -1,13 +1,13 @@
 {
-	"name": "array2",
+	"name": "mini-array2d",
 	"version": "1.0.0",
-	"description": "A simple two-dimensional array implementation.",
+	"description": "A simple and light two-dimensional array implementation.",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ElectrifyPro/array2.git"
 	},
-	"keywords": ["array", "2d"],
+	"keywords": ["light", "array", "2d"],
 	"author": "chillant",
 	"license": "MIT",
 	"bugs": {
